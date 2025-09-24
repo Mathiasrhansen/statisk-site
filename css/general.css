@@ -1,0 +1,28 @@
+@font-face {
+    font-family: inter-reg;
+    src: url(../fonts/Inter_18pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: inter-semibold;
+    src: url(../fonts/Inter_18pt-SemiBold.ttf);
+}
+
+/* "logo" */
+.r {
+    color: red;
+    display: inline-block;
+    transform: scaleX(-1) translateX(-0.1rem);
+}
+
+.home {
+    text-decoration: none;
+    color: #333;
+    font-family: inter-reg;
+    font-size: 6vw;
+    margin-top: 0;
+}
+
+.home:visited {
+    text-decoration: none;
+}

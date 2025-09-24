@@ -1,0 +1,79 @@
+h1 {
+    font-family: inter-reg;
+}
+
+a {
+    text-decoration: none;
+}
+
+.productContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5em;
+    font-family: inter-reg;
+    margin: 0 1em;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptor {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;   
+}
+
+.productImg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.productName {
+    font-family: inter-semibold;
+}
+
+.descriptor, .price, .salePrice {
+    font-family: inter-reg;
+}
+
+.type, .brand, .decoration, .productName {
+    color: #333;
+    margin: 0;
+}
+
+.price {
+    color: black;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.productCard:hover {
+    transform: scale(1.01);
+}
+
+.salePrice {
+    margin: 0;
+    color: black;
+}
+
+/* Tilbud - hardcoded */
+
+.sale {
+    text-decoration: line-through;
+    color: #333;
+}
+
+.soldOut {
+    filter: grayscale(100%);
+}
+
+.status {
+    font-family: inter-semibold;
+    color: white;
+    background-color: #333;
+    position: absolute;
+    padding: 5px;
+}

@@ -1,0 +1,56 @@
+.productContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 1vw 15vw;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+h1, p {
+    font-family: inter-semibold;
+}
+
+span {
+    font-family: inter-reg;
+}
+
+.productImg {
+    height: 80vh;
+    width: auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.purchase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.basketBtn {
+    font-family: inter-reg;
+    text-decoration: none;
+    background-color: rgb(0, 4, 128);
+    padding: 20px;
+    border-radius: 25px;
+    color: white;
+}
+
+.basketBtn:hover {
+    color: rgb(233, 233, 233);
+    transform: scale(1.01);
+}
+
+form {
+    font-family: inter-reg;
+}
+
+.backBtn {
+    position: absolute;
+    left: 10px;
+}

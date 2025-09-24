@@ -1,0 +1,30 @@
+/* Category container */
+.categoryListContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+/* CTA */
+.category {
+    background-color: #333;
+    font-family: inter-reg;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    border: #334;
+    padding: 3em;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+
+.category:hover{
+    scale: 1.01;
+}
+
+h1 {
+    font-family: inter-reg ;
+}
