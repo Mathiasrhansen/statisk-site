@@ -8,7 +8,7 @@ console.log(id);
 // skift id (de sidste tal i linket) for at ændre produktet
 fetch(`https://kea-alt-del.dk/t7/api/products/${id}`).then(res => res.json()).then(product => {console.log(product.brandname)
 
-productContainer.innerHTML = `<img https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="" class="productImg" />
+productContainer.innerHTML = `<img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="" class="productImg" />
         <div class="text">
           <div class="descriptor">
             <h1 class="productName">${product.productdisplayname}</h1>
@@ -18,17 +18,7 @@ productContainer.innerHTML = `<img https://kea-alt-del.dk/t7/images/webp/640/${p
             <p>
               Description:
               <span>
-                Made with fabric that breathes to assist fast moisture transfer,
-                this training garment fabric actively wicks away perspiration.
-                Designed for male athletes and sportsmen, this is an ideal
-                training garment, especially in cool weather conditions.
-              </span>
-            </p>
-            <p>
-              Model statistics:
-              <span
-                >The model wears trousers, length of 42"<br />Height-5.11",
-                Waist-31"
+                ${product.description}
               </span>
             </p>
           </div>
