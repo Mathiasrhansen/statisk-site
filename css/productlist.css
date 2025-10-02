@@ -54,26 +54,37 @@ a {
     transform: scale(1.01);
 }
 
+/* Tilbud - hardcoded */
+
+.onSale {
+    text-decoration: line-through;
+    color: #333;
+}
+
 .salePrice {
     margin: 0;
     color: black;
 }
 
-/* Tilbud - hardcoded */
-
-.sale {
-    text-decoration: line-through;
-    color: #333;
+.sale::before {
+    content: "Sale";
+    font-family: inter-semibold;
+    position: absolute;
+    color: white;
+    background-color: crimson;
+    padding: 5px;
 }
 
 .soldOut {
     filter: grayscale(100%);
 }
 
-.status {
+.soldOut::before {
+    content: "Out of stock";
     font-family: inter-semibold;
-    color: white;
-    background-color: #333;
     position: absolute;
+    color: white;
+    background-color: black;
     padding: 5px;
 }
+
