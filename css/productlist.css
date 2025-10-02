@@ -88,3 +88,39 @@ a {
     padding: 5px;
 }
 
+.filters {
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #333;
+    font-family: inter-reg;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    border: #334;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgb(30, 30, 40);
+}
+
+button:active {
+    background-color: black;
+}
+
+.sorting {
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}

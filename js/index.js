@@ -1,4 +1,5 @@
 const categoryList = document.querySelector(".categoryListContainer");
+let counter = 0;
 
 fetch("http://kea-alt-del.dk/t7/api/categories")
 .then(response => response.json())
@@ -6,7 +7,8 @@ fetch("http://kea-alt-del.dk/t7/api/categories")
 
 function showCategories(categories){
     categories.forEach(category => {
-        categoryList.innerHTML += `<a class="category" href="productlist.html?category=${category.category}">${category.category}</a>`
+        counter ++;
+        categoryList.innerHTML += `<a class="category" id="${counter}" href="productlist.html?category=${category.category}">${category.category}</a>`
         
     });
 }

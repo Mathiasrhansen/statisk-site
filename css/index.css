@@ -1,8 +1,39 @@
+/* Hero */
+.hero {
+    margin: 0 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heroImg {
+    width: auto;
+    height: 90vh;
+    margin: 0 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.categoryContainer {
+    width: 60vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Category container */
 .categoryListContainer {
+    position: absolute;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1em;
+    margin-bottom: 2em;
 }
 
 /* CTA */

@@ -1,5 +1,6 @@
 const productlistContainer = document.querySelector(".productContainer");
 const header = document.querySelector(".heading");
+// document.querySelector(".filters").addEventListener("click", showFiltered);
 
 const params = new URLSearchParams(window.location.search);
 const categoryID = params.get("category");
@@ -27,5 +28,18 @@ function showProducts(products){
               </a>`
             }
         );
-        productlistContainer.innerHTML += `  `
         };
+        // let currentDataSet;
+        // let allData = fetch(`https://kea-alt-del.dk/t7/api/products`).then((response => response.json)).then((json) => {allData = json; showProducts(allData);})
+        
+        // function showFiltered(event){
+        //     const gender = event.target.dataset.gender;
+        
+        //     if(gender == "All"){
+        //         showProducts(allData)
+        //     }
+        //     else {
+        //       const udsnit = allData.filter(product => product.gender == gender);
+        //       showProducts(udsnit);
+        //     }
+        // }
